@@ -35,7 +35,7 @@ if args.image is not None:
         originalFormat = file.format
     imageList.append(ImageFile)
 if args.directory is not None:
-    DirectoryPath = lit(args.directory)
+    DirectoryPath = args.directory
     for item in os.listdir(DirectoryPath):
         try:
             with Image.open(item) as file:
